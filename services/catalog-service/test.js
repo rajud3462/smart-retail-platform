@@ -1,6 +1,6 @@
 console.log("Running Smart Retail Tests");
 
-const value = 2 + 3;
+const value = 2 + 2;
 
 if(value === 4){
 
