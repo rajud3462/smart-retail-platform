@@ -40,6 +40,12 @@ jobs:
        ./services/catalog-service
 
    - name: Push Catalog Image
+     run: |
+
+       docker push \
+       ${{ secrets.ACR_LOGIN_SERVER }}/catalog-service:${{ github.run_number }}
+
+
    - name: Build Frontend
 
      run: |
