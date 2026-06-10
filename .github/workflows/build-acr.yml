@@ -53,9 +53,9 @@ jobs:
      run: |
 
        docker push \
-       ${{ secrets.ACR_LOGIN_SERVER }}/frontend:${{ github.run_number }}
+       -t  ${{ secrets.ACR_LOGIN_SERVER }}/frontend:${{ github.run_number }}
 
      run: |
 
        docker push \
-       ${{ secrets.ACR_LOGIN_SERVER }}/catalog-service:${{ github.run_number }}
+       -t ${{ secrets.ACR_LOGIN_SERVER }}/catalog-service:${{ github.run_number }}
